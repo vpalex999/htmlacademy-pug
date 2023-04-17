@@ -1,0 +1,20 @@
+{
+    "name": "template-engine-source",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "start": "concurrently \"yarn run sync\" \"yarn run pug\"",
+      "pug": "pug ./static/pug/ --pretty -w -o ./",
+      "sync": "browser-sync start --files=\"./**/*.css,./**/*.js, **/*.html,./**/**/.pug\" -s"
+    },
+    "dependencies": {
+      "browser-sync": "2.27.5",
+      "concurrently": "6.2.1",
+      "pug": "^3.0.2",
+      "pug-cli": "1.0.0-alpha6"
+    },
+    "devDependencies": {
+      "nodemon": "1.18.4"
+    },
+    "keywords": []
+  }
