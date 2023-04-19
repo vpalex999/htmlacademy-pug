@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
-    <title>Каталог книг</title>
+    <title>Сайт с книгами "По полочкам"</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__wrapper"><a class="header__logo-link" href="index.html"><span class="visually-hidden">Логотип сайта "По полочкам"</span><svg.header__logo" width="230" height="35" viewBox="0 0 230 35" fill="none" xmlns="http://www.w3.org/2000/svg
+          <div class="header__wrapper"><a class="header__logo-link" href="index.html"><span class="visually-hidden">Логотип сайта "По полочкам"</span><svg class="header__logo" width="230" height="35" viewBox="0 0 230 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0 0.612722H21.2467V3.21678H17.9631V14.5521H21.2467V17.1945H12.6321V14.5521H14.6409V3.21678H6.6058V14.5521H8.61458V17.1945H0V14.5521H3.28358V3.21678H0V0.612722Z"
                   fill="#37393E"
@@ -63,26 +62,12 @@
               <div class="user-header__search">
                 <input class="user-header__search-input" type="text" name="user-headerSearch" placeholder="Поиск по полке...">
                 <button class="user-header__search-button" type="submit">
-                  Найти<svg
-                    .user-header__search-icon"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                  >
+                  Найти<svg class="user-header__search-icon" class="width="24" class="height="24" class="viewBox="0 0 24 24" class="fill="none" class="xmlns="http://www.w3.org/2000/svg">
                     <circle cx="11" cy="11" r="7" stroke="#3971FF" stroke-width="2" />
                     <path d="M20 20L17 17" stroke="#3971FF" stroke-width="2" stroke-linecap="round" />
                   </svg>
                 </button>
-              </div><a class="user-header__basket" href="#"><span class="visually-hidden">Корзина</span><svg
-                  .user-header__basket-icon"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
+              </div><a class="user-header__basket" href="#"><span class="visually-hidden">Корзина</span><svg class="user-header__basket-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M8 8L8 7C8 4.79086 9.79086 3 12 3V3C14.2091 3 16 4.79086 16 7L16 8"
                     stroke="white"
@@ -117,10 +102,306 @@
           </div>
         </nav>
       </header>
+      <div class="content">
+        <main class="catalog-page">
+          <section class="breadcrumbs">
+            <div class="container">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная страница</a></li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__text">Каталог книг</span></li>
+              </ul>
+            </div>
+          </section>
+          <section class="catalog">
+            <div class="container">
+              <h1 class="catalog__title">Каталог книг</h1>
+              <div class="catalog__wrapper">
+                <div class="catalog-filter">
+                  <form class="catalog-filter__form">
+                    <fieldset class="catalog-filter__fieldset">
+                      <p class="catalog-filter__legend">Категория</p>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="fiction" type="checkbox" name="fiction">
+                        <label class="catalog-filter__label" for="fiction">Художественная литература</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="for-children" type="checkbox" name="for-children">
+                        <label class="catalog-filter__label" for="for-children">Книги для детей</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="education" type="checkbox" name="education" checked>
+                        <label class="catalog-filter__label" for="education">Образование</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="science-and-technology" type="checkbox" name="science-and-technology">
+                        <label class="catalog-filter__label" for="science-and-technology">Наука и техника</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="society" type="checkbox" name="society">
+                        <label class="catalog-filter__label" for="society">Общество</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="business-literature" type="checkbox" name="business-literature">
+                        <label class="catalog-filter__label" for="business-literature">Деловая литература</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="health" type="checkbox" name="health">
+                        <label class="catalog-filter__label" for="health">Здоровье</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="hobby" type="checkbox" name="hobby" checked>
+                        <label class="catalog-filter__label" for="hobby">Увлечения</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="psychology" type="checkbox" name="psychology">
+                        <label class="catalog-filter__label" for="psychology">Психология</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="esoterics" type="checkbox" name="esoterics">
+                        <label class="catalog-filter__label" for="esoterics">Эзотерика</label>
+                      </div>
+                      <div class="catalog-filter__box">
+                        <input class="catalog-filter__checkbox" id="philosophy" type="checkbox" name="philosophy">
+                        <label class="catalog-filter__label" for="philosophy">Философия и религия</label>
+                      </div>
+                      <catalog-filter__box>
+                        <input class="catalog-filter__checkbox" id="art" type="checkbox" name="art" checked>
+                        <label class="catalog-filter__label" for="art">Искусство</label>
+                      </catalog-filter__box>
+                    </fieldset>
+                    <fieldset class="catalog-filter__fieldset">
+                      <p class="catalog-filter__legend">Статус</p>
+                      <div class="catalog-filter__box catalog-filter__box--radio">
+                        <input class="catalog-filter__radio" id="bestsellers" type="radio" name="status" value="bestsellers">
+                        <label class="catalog-filter__label" for="bestsellers">Хиты продаж</label>
+                      </div>
+                      <div class="catalog-filter__box catalog-filter__box--radio">
+                        <input class="catalog-filter__radio" id="news-books" type="radio" name="status" value="news-books" checked>
+                        <label class="catalog-filter__label" for="news-books">Новинки</label>
+                      </div>
+                      <div class="catalog-filter__box catalog-filter__box--radio">
+                        <input class="catalog-filter__radio" id="preorder" type="radio" name="status" value="preorder">
+                        <label class="catalog-filter__label" for="preorder">Предзаказ</label>
+                      </div>
+                    </fieldset>
+                    <fieldset class="catalog-filter__fieldset">
+                      <p class="catalog-filter__legend">Наличие</p>
+                      <div class="catalog-filter__box catalog-filter__box--radio">
+                        <input class="catalog-filter__radio" id="in-the-shop" type="radio" name="availability" value="in-the-shop">
+                        <label class="catalog-filter__label" for="in-the-shop">В магазине</label>
+                      </div>
+                      <div class="catalog-filter__box catalog-filter__box--radio">
+                        <input class="catalog-filter__radio" id="in-the-internet-shop" type="radio" name="availability" value="in-the-internet-shop" checked>
+                        <label class="catalog-filter__label" for="in-the-internet-shop">В интернет-магазине</label>
+                      </div>
+                      <div class="catalog-filter__box catalog-filter__box--radio">
+                        <input class="catalog-filter__radio" id="under-the-order" type="radio" name="availability" value="under-the-order">
+                        <label class="catalog-filter__label" for="under-the-order">Под заказ</label>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="catalog-books">
+                  <div class="catalog-books__sort">
+                    <label class="catalog-books__sort-title" for="sort">Сортировать:</label>
+                    <select class="catalog-books__select" id="sort" size="1">
+                      <option class="catalog-books__options">по популярности</option>
+                      <option class="catalog-books__options">по названию</option>
+                      <option class="catalog-books__options">по новизне</option>
+                    </select>
+                  </div>
+                  <ul class="books">
+                    <li class="books__item">
+                      <div class="books__inner"><img class="books__img" src="static/images/content/book-iron-king.jpg" alt="Фото книги - &quot;Железный король&quot;" width="221" height="221">
+                        <div class="books__box">
+                          <p class="books__author">Кагава Д.</p>
+                          <h3 class="books__name">Железный король</h3>
+                          <p class="books__description">Меган удалось победить Железного короля, и теперь она во Дворце</p>
+                          <p class="books__stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M4.87152 2.81324C5.29957 1.74612 5.5136 1.21256 5.86132 1.13861C5.95275 1.11916 6.04724 1.11916 6.13867 1.13861C6.48639 1.21256 6.70042 1.74612 7.12847 2.81324C7.37189 3.4201 7.4936 3.72352 7.72134 3.9299C7.78522 3.98779 7.85456 4.03934 7.92839 4.08384C8.19162 4.24249 8.52022 4.27192 9.17741 4.33078C10.2899 4.43041 10.8462 4.48023 11.016 4.79739C11.0512 4.86308 11.0751 4.9342 11.0868 5.00779C11.1431 5.36315 10.7342 5.73519 9.91632 6.47927L9.68921 6.68589C9.30685 7.03376 9.11566 7.2077 9.00508 7.42477C8.93875 7.55498 8.89427 7.69521 8.87343 7.83985C8.83869 8.08098 8.89467 8.33331 9.00664 8.83796L9.04665 9.01827C9.24744 9.92329 9.34784 10.3758 9.22251 10.5982C9.10994 10.798 8.90257 10.9259 8.67351 10.9369C8.41849 10.949 8.05917 10.6562 7.34052 10.0707C6.86704 9.68484 6.63031 9.49194 6.3675 9.41658C6.12734 9.34771 5.87265 9.34771 5.63249 9.41658C5.36968 9.49194 5.13294 9.68484 4.65947 10.0707C3.94082 10.6562 3.5815 10.949 3.32648 10.9369C3.09742 10.9259 2.89005 10.798 2.77747 10.5982C2.65215 10.3758 2.75254 9.92329 2.95334 9.01827L2.99335 8.83796C3.10532 8.33331 3.1613 8.08098 3.12656 7.83985C3.10572 7.69521 3.06124 7.55498 2.99491 7.42477C2.88432 7.2077 2.69314 7.03376 2.31078 6.68589L2.08366 6.47927C1.2658 5.73519 0.856875 5.36315 0.913191 5.00779C0.924854 4.9342 0.948774 4.86308 0.983955 4.79739C1.15382 4.48023 1.71007 4.43041 2.82258 4.33078C3.47977 4.27192 3.80837 4.24249 4.07159 4.08384C4.14543 4.03934 4.21477 3.98779 4.27865 3.9299C4.50639 3.72352 4.6281 3.4201 4.87152 2.81324Z"
+                                fill="white"
+                                stroke="white"
+                              />
+                            </svg>
+                            <span class="books__star">3.8</span>
+                          </p>
+                          <div class="books__wrapper"><a class="books__link" href="iron-king.html">Подробнее <span class="books__pages">416 страниц</span></a></div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="books__item">
+                      <div class="books__inner"><img class="books__img" src="static/images/content/book-fox-hole.jpg" alt="Фото книги - &quot;Лисья нора&quot;" width="221" height="221">
+                        <div class="books__box">
+                          <p class="books__author">Сакавич Н.</p>
+                          <h3 class="books__name">Лисья нора</h3>
+                          <p class="books__description">Команда Лисов—игроки экси, которые пытаются выиграть чемпионат мира</p>
+                          <p class="books__stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M4.87152 2.81324C5.29957 1.74612 5.5136 1.21256 5.86132 1.13861C5.95275 1.11916 6.04724 1.11916 6.13867 1.13861C6.48639 1.21256 6.70042 1.74612 7.12847 2.81324C7.37189 3.4201 7.4936 3.72352 7.72134 3.9299C7.78522 3.98779 7.85456 4.03934 7.92839 4.08384C8.19162 4.24249 8.52022 4.27192 9.17741 4.33078C10.2899 4.43041 10.8462 4.48023 11.016 4.79739C11.0512 4.86308 11.0751 4.9342 11.0868 5.00779C11.1431 5.36315 10.7342 5.73519 9.91632 6.47927L9.68921 6.68589C9.30685 7.03376 9.11566 7.2077 9.00508 7.42477C8.93875 7.55498 8.89427 7.69521 8.87343 7.83985C8.83869 8.08098 8.89467 8.33331 9.00664 8.83796L9.04665 9.01827C9.24744 9.92329 9.34784 10.3758 9.22251 10.5982C9.10994 10.798 8.90257 10.9259 8.67351 10.9369C8.41849 10.949 8.05917 10.6562 7.34052 10.0707C6.86704 9.68484 6.63031 9.49194 6.3675 9.41658C6.12734 9.34771 5.87265 9.34771 5.63249 9.41658C5.36968 9.49194 5.13294 9.68484 4.65947 10.0707C3.94082 10.6562 3.5815 10.949 3.32648 10.9369C3.09742 10.9259 2.89005 10.798 2.77747 10.5982C2.65215 10.3758 2.75254 9.92329 2.95334 9.01827L2.99335 8.83796C3.10532 8.33331 3.1613 8.08098 3.12656 7.83985C3.10572 7.69521 3.06124 7.55498 2.99491 7.42477C2.88432 7.2077 2.69314 7.03376 2.31078 6.68589L2.08366 6.47927C1.2658 5.73519 0.856875 5.36315 0.913191 5.00779C0.924854 4.9342 0.948774 4.86308 0.983955 4.79739C1.15382 4.48023 1.71007 4.43041 2.82258 4.33078C3.47977 4.27192 3.80837 4.24249 4.07159 4.08384C4.14543 4.03934 4.21477 3.98779 4.27865 3.9299C4.50639 3.72352 4.6281 3.4201 4.87152 2.81324Z"
+                                fill="white"
+                                stroke="white"
+                              />
+                            </svg>
+                            <span class="books__star">4.2</span>
+                          </p>
+                          <div class="books__wrapper"><a class="books__link" href="#">Подробнее <span class="books__pages">336 страниц</span></a></div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="books__item">
+                      <div class="books__inner"><img class="books__img" src="static/images/content/book-just-masa.jpg" alt="Фото книги - &quot;Просто маса&quot;" width="221" height="221">
+                        <div class="books__box">
+                          <p class="books__author">Акунин Б.</p>
+                          <h3 class="books__name">Просто маса</h3>
+                          <p class="books__description">Масу ожидают невероятные потрясения и невероятные приключения</p>
+                          <p class="books__stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M4.87152 2.81324C5.29957 1.74612 5.5136 1.21256 5.86132 1.13861C5.95275 1.11916 6.04724 1.11916 6.13867 1.13861C6.48639 1.21256 6.70042 1.74612 7.12847 2.81324C7.37189 3.4201 7.4936 3.72352 7.72134 3.9299C7.78522 3.98779 7.85456 4.03934 7.92839 4.08384C8.19162 4.24249 8.52022 4.27192 9.17741 4.33078C10.2899 4.43041 10.8462 4.48023 11.016 4.79739C11.0512 4.86308 11.0751 4.9342 11.0868 5.00779C11.1431 5.36315 10.7342 5.73519 9.91632 6.47927L9.68921 6.68589C9.30685 7.03376 9.11566 7.2077 9.00508 7.42477C8.93875 7.55498 8.89427 7.69521 8.87343 7.83985C8.83869 8.08098 8.89467 8.33331 9.00664 8.83796L9.04665 9.01827C9.24744 9.92329 9.34784 10.3758 9.22251 10.5982C9.10994 10.798 8.90257 10.9259 8.67351 10.9369C8.41849 10.949 8.05917 10.6562 7.34052 10.0707C6.86704 9.68484 6.63031 9.49194 6.3675 9.41658C6.12734 9.34771 5.87265 9.34771 5.63249 9.41658C5.36968 9.49194 5.13294 9.68484 4.65947 10.0707C3.94082 10.6562 3.5815 10.949 3.32648 10.9369C3.09742 10.9259 2.89005 10.798 2.77747 10.5982C2.65215 10.3758 2.75254 9.92329 2.95334 9.01827L2.99335 8.83796C3.10532 8.33331 3.1613 8.08098 3.12656 7.83985C3.10572 7.69521 3.06124 7.55498 2.99491 7.42477C2.88432 7.2077 2.69314 7.03376 2.31078 6.68589L2.08366 6.47927C1.2658 5.73519 0.856875 5.36315 0.913191 5.00779C0.924854 4.9342 0.948774 4.86308 0.983955 4.79739C1.15382 4.48023 1.71007 4.43041 2.82258 4.33078C3.47977 4.27192 3.80837 4.24249 4.07159 4.08384C4.14543 4.03934 4.21477 3.98779 4.27865 3.9299C4.50639 3.72352 4.6281 3.4201 4.87152 2.81324Z"
+                                fill="white"
+                                stroke="white"
+                              />
+                            </svg>
+                            <span class="books__star">4.5</span>
+                          </p><div class="books__wrapper">
+<a class="books__link" href="#">Подробнее</a><span class="books__pages">448 страниц</span>
+</div>
+                        </div></div>
+                      </div></div>
+                    </li>
+                    <li class="books__item">
+                      <div class="books__inner"><img class="books__img" src="static/images/content/book-green-light.jpg" alt="Фото книги - &quot;Зеленый свет&quot;" width="221" height="221">
+                        <div class="books__box">
+                          <p class="books__author">Макконахи М.</p>
+                          <h3 class="books__name">Зеленый свет</h3>
+                          <p class="books__description">Как быть честным. Как избежать стресса. Как радоваться жизни</p>
+                          <p class="books__stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M4.87152 2.81324C5.29957 1.74612 5.5136 1.21256 5.86132 1.13861C5.95275 1.11916 6.04724 1.11916 6.13867 1.13861C6.48639 1.21256 6.70042 1.74612 7.12847 2.81324C7.37189 3.4201 7.4936 3.72352 7.72134 3.9299C7.78522 3.98779 7.85456 4.03934 7.92839 4.08384C8.19162 4.24249 8.52022 4.27192 9.17741 4.33078C10.2899 4.43041 10.8462 4.48023 11.016 4.79739C11.0512 4.86308 11.0751 4.9342 11.0868 5.00779C11.1431 5.36315 10.7342 5.73519 9.91632 6.47927L9.68921 6.68589C9.30685 7.03376 9.11566 7.2077 9.00508 7.42477C8.93875 7.55498 8.89427 7.69521 8.87343 7.83985C8.83869 8.08098 8.89467 8.33331 9.00664 8.83796L9.04665 9.01827C9.24744 9.92329 9.34784 10.3758 9.22251 10.5982C9.10994 10.798 8.90257 10.9259 8.67351 10.9369C8.41849 10.949 8.05917 10.6562 7.34052 10.0707C6.86704 9.68484 6.63031 9.49194 6.3675 9.41658C6.12734 9.34771 5.87265 9.34771 5.63249 9.41658C5.36968 9.49194 5.13294 9.68484 4.65947 10.0707C3.94082 10.6562 3.5815 10.949 3.32648 10.9369C3.09742 10.9259 2.89005 10.798 2.77747 10.5982C2.65215 10.3758 2.75254 9.92329 2.95334 9.01827L2.99335 8.83796C3.10532 8.33331 3.1613 8.08098 3.12656 7.83985C3.10572 7.69521 3.06124 7.55498 2.99491 7.42477C2.88432 7.2077 2.69314 7.03376 2.31078 6.68589L2.08366 6.47927C1.2658 5.73519 0.856875 5.36315 0.913191 5.00779C0.924854 4.9342 0.948774 4.86308 0.983955 4.79739C1.15382 4.48023 1.71007 4.43041 2.82258 4.33078C3.47977 4.27192 3.80837 4.24249 4.07159 4.08384C4.14543 4.03934 4.21477 3.98779 4.27865 3.9299C4.50639 3.72352 4.6281 3.4201 4.87152 2.81324Z"
+                                fill="white"
+                                stroke="white"
+                              />
+                            </svg>
+                            <span class="books__star">3.9</span>
+                          </p>
+                          <div class="books__wrapper"><a class="books__link" href="#">Подробнее <span class="books__pages">320 страниц</span></a></div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="books__item">
+                      <div class="books__inner"><img class="books__img" src="static/images/content/book-sun-midnight.jpg" alt="Фото книги - &quot;Солнце полуночи&quot;" width="221" height="221">
+                        <div class="books__box">
+                          <p class="books__author">Майер С.</p>
+                          <h3 class="books__name">Солнце полуночи</h3>
+                          <p class="books__description">История любви и приключений от лица Эдварда</p>
+                          <p class="books__stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M4.87152 2.81324C5.29957 1.74612 5.5136 1.21256 5.86132 1.13861C5.95275 1.11916 6.04724 1.11916 6.13867 1.13861C6.48639 1.21256 6.70042 1.74612 7.12847 2.81324C7.37189 3.4201 7.4936 3.72352 7.72134 3.9299C7.78522 3.98779 7.85456 4.03934 7.92839 4.08384C8.19162 4.24249 8.52022 4.27192 9.17741 4.33078C10.2899 4.43041 10.8462 4.48023 11.016 4.79739C11.0512 4.86308 11.0751 4.9342 11.0868 5.00779C11.1431 5.36315 10.7342 5.73519 9.91632 6.47927L9.68921 6.68589C9.30685 7.03376 9.11566 7.2077 9.00508 7.42477C8.93875 7.55498 8.89427 7.69521 8.87343 7.83985C8.83869 8.08098 8.89467 8.33331 9.00664 8.83796L9.04665 9.01827C9.24744 9.92329 9.34784 10.3758 9.22251 10.5982C9.10994 10.798 8.90257 10.9259 8.67351 10.9369C8.41849 10.949 8.05917 10.6562 7.34052 10.0707C6.86704 9.68484 6.63031 9.49194 6.3675 9.41658C6.12734 9.34771 5.87265 9.34771 5.63249 9.41658C5.36968 9.49194 5.13294 9.68484 4.65947 10.0707C3.94082 10.6562 3.5815 10.949 3.32648 10.9369C3.09742 10.9259 2.89005 10.798 2.77747 10.5982C2.65215 10.3758 2.75254 9.92329 2.95334 9.01827L2.99335 8.83796C3.10532 8.33331 3.1613 8.08098 3.12656 7.83985C3.10572 7.69521 3.06124 7.55498 2.99491 7.42477C2.88432 7.2077 2.69314 7.03376 2.31078 6.68589L2.08366 6.47927C1.2658 5.73519 0.856875 5.36315 0.913191 5.00779C0.924854 4.9342 0.948774 4.86308 0.983955 4.79739C1.15382 4.48023 1.71007 4.43041 2.82258 4.33078C3.47977 4.27192 3.80837 4.24249 4.07159 4.08384C4.14543 4.03934 4.21477 3.98779 4.27865 3.9299C4.50639 3.72352 4.6281 3.4201 4.87152 2.81324Z"
+                                fill="white"
+                                stroke="white"
+                              />
+                            </svg>
+                            <span class="books__star">3.5</span>
+                          </p>
+                          <div class="books__wrapper"><a class="books__link" href="#">Подробнее <span.books__pages 784 страниц</a></div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="books__item">
+                      <div class="books__inner"><img class="books__img" src="static/images/content/book-second-life.jpg" alt="Фото книги - &quot;Вторая жизнь Уве&quot;" width="221" height="221">
+                        <div class="books__box">
+                          <p class="books__author">Бакман Ф.</p>
+                          <h3 class="books__name">Вторая жизнь Уве</h3>
+                          <p class="books__description">Откуда берутся зануды и склочники? Внутри зреет обида на мир</p>
+                          <p class="books__stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M4.87152 2.81324C5.29957 1.74612 5.5136 1.21256 5.86132 1.13861C5.95275 1.11916 6.04724 1.11916 6.13867 1.13861C6.48639 1.21256 6.70042 1.74612 7.12847 2.81324C7.37189 3.4201 7.4936 3.72352 7.72134 3.9299C7.78522 3.98779 7.85456 4.03934 7.92839 4.08384C8.19162 4.24249 8.52022 4.27192 9.17741 4.33078C10.2899 4.43041 10.8462 4.48023 11.016 4.79739C11.0512 4.86308 11.0751 4.9342 11.0868 5.00779C11.1431 5.36315 10.7342 5.73519 9.91632 6.47927L9.68921 6.68589C9.30685 7.03376 9.11566 7.2077 9.00508 7.42477C8.93875 7.55498 8.89427 7.69521 8.87343 7.83985C8.83869 8.08098 8.89467 8.33331 9.00664 8.83796L9.04665 9.01827C9.24744 9.92329 9.34784 10.3758 9.22251 10.5982C9.10994 10.798 8.90257 10.9259 8.67351 10.9369C8.41849 10.949 8.05917 10.6562 7.34052 10.0707C6.86704 9.68484 6.63031 9.49194 6.3675 9.41658C6.12734 9.34771 5.87265 9.34771 5.63249 9.41658C5.36968 9.49194 5.13294 9.68484 4.65947 10.0707C3.94082 10.6562 3.5815 10.949 3.32648 10.9369C3.09742 10.9259 2.89005 10.798 2.77747 10.5982C2.65215 10.3758 2.75254 9.92329 2.95334 9.01827L2.99335 8.83796C3.10532 8.33331 3.1613 8.08098 3.12656 7.83985C3.10572 7.69521 3.06124 7.55498 2.99491 7.42477C2.88432 7.2077 2.69314 7.03376 2.31078 6.68589L2.08366 6.47927C1.2658 5.73519 0.856875 5.36315 0.913191 5.00779C0.924854 4.9342 0.948774 4.86308 0.983955 4.79739C1.15382 4.48023 1.71007 4.43041 2.82258 4.33078C3.47977 4.27192 3.80837 4.24249 4.07159 4.08384C4.14543 4.03934 4.21477 3.98779 4.27865 3.9299C4.50639 3.72352 4.6281 3.4201 4.87152 2.81324Z"
+                                fill="white"
+                                stroke="white"
+                              />
+                            </svg>
+                            <span class="books__star">4.4</span>
+                          </p>
+                          <books__wrapper><a class="books__link" href="#">Подробнее <span class="books__pages">384 страниц</span></a></books__wrapper>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="books__item">
+                      <div class="books__inner"><img class="books__img" src="static/images/content/book-istrebitel.jpg" alt="Фото книги - &quot;Истребитель&quot;" width="221" height="221">
+                        <div class="books__box">
+                          <p class="books__author">Быков Д.</p>
+                          <h3 class="books__name">Истребитель</h3>
+                          <p class="books__description">Роман о советских летчиках, &quot;соколах Сталина&quot;</p>
+                          <p class="books__stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M4.87152 2.81324C5.29957 1.74612 5.5136 1.21256 5.86132 1.13861C5.95275 1.11916 6.04724 1.11916 6.13867 1.13861C6.48639 1.21256 6.70042 1.74612 7.12847 2.81324C7.37189 3.4201 7.4936 3.72352 7.72134 3.9299C7.78522 3.98779 7.85456 4.03934 7.92839 4.08384C8.19162 4.24249 8.52022 4.27192 9.17741 4.33078C10.2899 4.43041 10.8462 4.48023 11.016 4.79739C11.0512 4.86308 11.0751 4.9342 11.0868 5.00779C11.1431 5.36315 10.7342 5.73519 9.91632 6.47927L9.68921 6.68589C9.30685 7.03376 9.11566 7.2077 9.00508 7.42477C8.93875 7.55498 8.89427 7.69521 8.87343 7.83985C8.83869 8.08098 8.89467 8.33331 9.00664 8.83796L9.04665 9.01827C9.24744 9.92329 9.34784 10.3758 9.22251 10.5982C9.10994 10.798 8.90257 10.9259 8.67351 10.9369C8.41849 10.949 8.05917 10.6562 7.34052 10.0707C6.86704 9.68484 6.63031 9.49194 6.3675 9.41658C6.12734 9.34771 5.87265 9.34771 5.63249 9.41658C5.36968 9.49194 5.13294 9.68484 4.65947 10.0707C3.94082 10.6562 3.5815 10.949 3.32648 10.9369C3.09742 10.9259 2.89005 10.798 2.77747 10.5982C2.65215 10.3758 2.75254 9.92329 2.95334 9.01827L2.99335 8.83796C3.10532 8.33331 3.1613 8.08098 3.12656 7.83985C3.10572 7.69521 3.06124 7.55498 2.99491 7.42477C2.88432 7.2077 2.69314 7.03376 2.31078 6.68589L2.08366 6.47927C1.2658 5.73519 0.856875 5.36315 0.913191 5.00779C0.924854 4.9342 0.948774 4.86308 0.983955 4.79739C1.15382 4.48023 1.71007 4.43041 2.82258 4.33078C3.47977 4.27192 3.80837 4.24249 4.07159 4.08384C4.14543 4.03934 4.21477 3.98779 4.27865 3.9299C4.50639 3.72352 4.6281 3.4201 4.87152 2.81324Z"
+                                fill="white"
+                                stroke="white"
+                              />
+                            </svg>
+                            <span class="books__star">3.9</span>
+                          </p>
+                          <div class="books__wrapper"><a class="books__link" href="#">Подробнее <span class="books__pages">576 страниц</span></a></div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="books__item">
+                      <div class="books__inner"><img class="books__img" src="static/images/content/book-lavr.jpg" alt="Фото книги - &quot;Лавр&quot;" width="221" height="221">
+                        <div class="books__box">
+                          <p class="books__author">Водолазкин Е.</p>
+                          <h3 class="books__name">Лавр</h3>
+                          <p class="books__description">Возможно ли любовью и жертвой спасти душу человека?</p>
+                          <p class="books__stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M4.87152 2.81324C5.29957 1.74612 5.5136 1.21256 5.86132 1.13861C5.95275 1.11916 6.04724 1.11916 6.13867 1.13861C6.48639 1.21256 6.70042 1.74612 7.12847 2.81324C7.37189 3.4201 7.4936 3.72352 7.72134 3.9299C7.78522 3.98779 7.85456 4.03934 7.92839 4.08384C8.19162 4.24249 8.52022 4.27192 9.17741 4.33078C10.2899 4.43041 10.8462 4.48023 11.016 4.79739C11.0512 4.86308 11.0751 4.9342 11.0868 5.00779C11.1431 5.36315 10.7342 5.73519 9.91632 6.47927L9.68921 6.68589C9.30685 7.03376 9.11566 7.2077 9.00508 7.42477C8.93875 7.55498 8.89427 7.69521 8.87343 7.83985C8.83869 8.08098 8.89467 8.33331 9.00664 8.83796L9.04665 9.01827C9.24744 9.92329 9.34784 10.3758 9.22251 10.5982C9.10994 10.798 8.90257 10.9259 8.67351 10.9369C8.41849 10.949 8.05917 10.6562 7.34052 10.0707C6.86704 9.68484 6.63031 9.49194 6.3675 9.41658C6.12734 9.34771 5.87265 9.34771 5.63249 9.41658C5.36968 9.49194 5.13294 9.68484 4.65947 10.0707C3.94082 10.6562 3.5815 10.949 3.32648 10.9369C3.09742 10.9259 2.89005 10.798 2.77747 10.5982C2.65215 10.3758 2.75254 9.92329 2.95334 9.01827L2.99335 8.83796C3.10532 8.33331 3.1613 8.08098 3.12656 7.83985C3.10572 7.69521 3.06124 7.55498 2.99491 7.42477C2.88432 7.2077 2.69314 7.03376 2.31078 6.68589L2.08366 6.47927C1.2658 5.73519 0.856875 5.36315 0.913191 5.00779C0.924854 4.9342 0.948774 4.86308 0.983955 4.79739C1.15382 4.48023 1.71007 4.43041 2.82258 4.33078C3.47977 4.27192 3.80837 4.24249 4.07159 4.08384C4.14543 4.03934 4.21477 3.98779 4.27865 3.9299C4.50639 3.72352 4.6281 3.4201 4.87152 2.81324Z"
+                                fill="white"
+                                stroke="white"
+                              />
+                            </svg>
+                            <span class="books__star">4.1</span>
+                          </p>
+                          <div class="books__wrapper"><a class="books__link" href="#">Подробнее <span class="books__pages">448 страниц</span></a></div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="catalog__pagination pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item"><a class="pagination__link pagination__link--active" title="Текущая страница 1">1</a></li>
+                  <li class="pagination__item">
+                    <apagination__link href="#" title="Перейти на страницу № 2">2</apagination__link>
+                  </li>
+                  <li class="pagination__item">
+                    <apagination__link href="#" title="Перейти на страницу № 3">3</apagination__link>
+                  </li>
+                  <li class="pagination__item">
+                    <apagination__link href="#" title="Перейти на страницу № 4">4</apagination__link>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link pagination__link--arrow" href="#" title="Перейти на следующую страницу"><span class="visually-hidden">Перейти на следующую страницу</span><svg width="14" height="10" viewBox="0 0 14 10" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.46967 1.53033C8.17678 1.23744 8.17678 0.762563 8.46967 0.46967C8.76256 0.176777 9.23744 0.176777 9.53033 0.46967L13.5303 4.46967C13.8232 4.76256 13.8232 5.23744 13.5303 5.53033L9.53033 9.53033C9.23744 9.82322 8.76256 9.82322 8.46967 9.53033C8.17678 9.23744 8.17678 8.76256 8.46967 8.46967L11.1893 5.75H1.5C1.08579 5.75 0.75 5.41421 0.75 5C0.75 4.58579 1.08579 4.25 1.5 4.25H11.1893L8.46967 1.53033Z"
+                        />
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
       <footer class="footer">
         <div class="container">
           <div class="footer__wrapper">
-            <div class="footer__col"><a class="footer__logo-link" href="index.html"><span class="visually-hidden">Логотип сайта "По полочкам"</span><svg.footer__logo" width="230" height="35" viewBox="0 0 230 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="footer__col"><a class="footer__logo-link" href="index.html"><span class="visually-hidden">Логотип сайта "По полочкам"</span><svg class="footer__logo" width="230" height="35" viewBox="0 0 230 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0 0.612722H21.2467V3.21678H17.9631V14.5521H21.2467V17.1945H12.6321V14.5521H14.6409V3.21678H6.6058V14.5521H8.61458V17.1945H0V14.5521H3.28358V3.21678H0V0.612722Z"
                     fill="white"
@@ -165,7 +446,7 @@
                   <rect y="31.3635" width="230" height="2.98701" fill="#3971FF" />
                 </svg></a>
               <ul class="footer__social social-list">
-                <li class="social-list__item"><a class="social-list__link" href="#" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Ссылка на instagram</span><svg.social-list__icon" width="24" height="23" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+                <li class="social-list__item"><a class="social-list__link" href="#" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Ссылка на instagram</span><svg class="social-list__icon" width="24" height="23" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M16.6667 5.51714C16.6667 4.87281 17.189 4.35048 17.8333 4.35048C18.4777 4.35048 19 4.87281 19 5.51714C19 6.16148 18.4777 6.68381 17.8333 6.68381C17.189 6.68381 16.6667 6.16148 16.6667 5.51714Z"
                       />
@@ -180,20 +461,20 @@
                         d="M18.1346 0.655661C14.0903 0.203647 9.90974 0.203647 5.8654 0.655661C3.518 0.918017 1.62294 2.7672 1.34697 5.12681C0.863338 9.26183 0.863338 13.4391 1.34697 17.5741C1.62294 19.9338 3.518 21.7829 5.8654 22.0453C9.90974 22.4973 14.0903 22.4973 18.1346 22.0453C20.482 21.7829 22.3771 19.9338 22.6531 17.5741C23.1367 13.4391 23.1367 9.26183 22.6531 5.12681C22.3771 2.7672 20.482 0.918018 18.1346 0.655661ZM6.05978 2.39483C9.97493 1.95726 14.0251 1.95726 17.9403 2.39483C19.492 2.56827 20.7351 3.79282 20.9149 5.33011C21.3827 9.33005 21.3827 13.3709 20.9149 17.3708C20.7351 18.9081 19.492 20.1327 17.9403 20.3061C14.0251 20.7437 9.97493 20.7437 6.05978 20.3061C4.50799 20.1327 3.26492 18.9081 3.08512 17.3708C2.61729 13.3709 2.61729 9.33005 3.08512 5.33011C3.26492 3.79282 4.50799 2.56827 6.05978 2.39483Z"
                       />
                     </svg></a></li>
-                <li class="social-list__item"><a class="social-list__link" href="#" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Ссылка на telegram</span><svg.social-list__icon" width="25" height="21" viewBox="0 0 25 21" xmlns="http://www.w3.org/2000/svg">
+                <li class="social-list__item"><a class="social-list__link" href="#" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Ссылка на telegram</span><svg class="social-list__icon" width="25" height="21" viewBox="0 0 25 21" xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
                         d="M5.7522 12.7069C5.80327 12.7241 5.85482 12.7363 5.90631 12.7438C5.96247 12.8757 6.03503 13.0465 6.11968 13.2461C6.32627 13.7334 6.60463 14.3923 6.89195 15.0798C7.4779 16.4818 8.06895 17.9269 8.19949 18.3406C8.36108 18.852 8.53189 19.1996 8.71837 19.437C8.81478 19.5597 8.92629 19.6669 9.05678 19.7481C9.12246 19.7889 9.19185 19.8224 9.26428 19.8474C9.26746 19.8485 9.27065 19.8495 9.27384 19.8506C9.64719 19.9916 9.98758 19.9328 10.2007 19.8611C10.3147 19.8226 10.407 19.7762 10.4724 19.7387C10.5057 19.7195 10.5339 19.7016 10.5564 19.6865L10.5617 19.6829L13.8589 17.6267L17.6675 20.5466C17.7237 20.5897 17.785 20.6259 17.8499 20.6542C18.3075 20.8539 18.7505 20.9235 19.1674 20.8666C19.5834 20.8097 19.9138 20.6349 20.1597 20.4382C20.4005 20.2455 20.5638 20.0297 20.6654 19.8694C20.7173 19.7875 20.7563 19.7151 20.7838 19.6596C20.7976 19.6317 20.8087 19.6077 20.8173 19.5884L20.8283 19.563L20.8325 19.553L20.8342 19.5487L20.835 19.5468L20.8357 19.545C20.8557 19.4949 20.8711 19.4431 20.8816 19.3903L24.3585 1.86053C24.3696 1.80447 24.3752 1.74745 24.3752 1.6903C24.3752 1.17695 24.1818 0.688811 23.727 0.392602C23.3383 0.139438 22.9052 0.128541 22.6316 0.149313C22.3363 0.171721 22.0637 0.2446 21.8807 0.302835C21.7855 0.333142 21.7057 0.362383 21.6481 0.384691C21.6192 0.395903 21.5955 0.405522 21.5778 0.412858L21.5645 0.418443L2.06521 8.06775L2.06268 8.06865C2.05025 8.07318 2.0343 8.07913 2.01534 8.08651C1.97758 8.10121 1.92699 8.12192 1.8679 8.14871C1.75265 8.20094 1.59097 8.28257 1.42506 8.39618C1.16001 8.57769 0.550437 9.07481 0.653082 9.89533C0.734969 10.5499 1.18341 10.9519 1.45663 11.1453C1.60666 11.2514 1.74918 11.3273 1.85298 11.3767C1.90114 11.3997 2.00112 11.4403 2.0445 11.4579L2.05544 11.4623L5.7522 12.7069ZM22.247 2.02984L22.2442 2.03102C22.2345 2.03525 22.2248 2.03929 22.2149 2.04316L2.69188 9.70175C2.68168 9.70574 2.67142 9.70955 2.66108 9.71317L2.65021 9.71729C2.63772 9.72215 2.61669 9.73068 2.5903 9.74264C2.57534 9.74943 2.55972 9.75683 2.5438 9.76477C2.56567 9.77709 2.58661 9.7878 2.60521 9.79666C2.62308 9.80516 2.6367 9.81097 2.64416 9.81403L6.31056 11.0484C6.37767 11.0709 6.44023 11.1009 6.49765 11.137L18.6039 4.05006L18.6152 4.04336C18.6241 4.03815 18.6356 4.03145 18.6495 4.0236C18.6771 4.00803 18.7149 3.98729 18.7599 3.96437C18.844 3.92161 18.9784 3.85813 19.1298 3.81133C19.2353 3.77874 19.5462 3.68694 19.8823 3.79474C20.0897 3.86128 20.3045 4.00432 20.4442 4.24665C20.5136 4.36703 20.5506 4.48797 20.5685 4.59867C20.616 4.77307 20.6085 4.94527 20.5713 5.09395C20.4911 5.41421 20.2661 5.66402 20.0613 5.85509C19.8859 6.01891 17.6163 8.2074 15.3773 10.3678C14.2607 11.4452 13.1555 12.5119 12.3295 13.3093L11.7869 13.833L18.6375 19.0852C18.7946 19.1414 18.8875 19.1385 18.9305 19.1327C18.9817 19.1257 19.0236 19.106 19.0664 19.0717C19.1143 19.0334 19.1561 18.9817 19.1874 18.9324L19.1887 18.9303L22.5609 1.92852C22.5109 1.94055 22.4603 1.95487 22.4115 1.9704C22.3563 1.98798 22.3107 2.00473 22.2805 2.01643C22.2656 2.02223 22.2548 2.02662 22.2489 2.02905L22.247 2.02984ZM12.3755 16.4894L11.0087 15.4416L10.6776 17.5482L12.3755 16.4894ZM9.75495 13.3623L11.1141 12.0502C11.9402 11.2527 13.0455 10.1859 14.1621 9.10845L15.2967 8.01384L7.69002 12.4668L7.73084 12.563C7.93816 13.0519 8.21775 13.7138 8.5066 14.4049C8.72258 14.9217 8.94844 15.4659 9.15415 15.9696L9.48436 13.8691C9.51619 13.6666 9.61513 13.4913 9.75495 13.3623Z"
                       />
                     </svg></a></li>
-                <li class="social-list__item"><a class="social-list__link" href="#" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Ссылка на vkontakte</span><svg.social-list__icon" width="28" height="19" viewBox="0 0 28 19" xmlns="http://www.w3.org/2000/svg">
+                <li class="social-list__item"><a class="social-list__link" href="#" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Ссылка на vkontakte</span><svg class="social-list__icon" width="28" height="19" viewBox="0 0 28 19" xmlns="http://www.w3.org/2000/svg">
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
                         d="M27.3058 15.0265C26.6713 13.7484 25.8351 12.5809 24.8296 11.5688C24.4874 11.171 24.0861 10.7785 23.7729 10.472L23.7292 10.4292C23.5677 10.2711 23.4341 10.1398 23.3249 10.0268C24.6998 8.11487 25.8766 6.06761 26.8368 3.9166L26.8756 3.82981L26.9027 3.73872C27.0289 3.31535 27.1742 2.51027 26.6601 1.7827C26.1287 1.03069 25.2777 0.895067 24.7079 0.895067H22.0863C21.5398 0.87001 20.9986 1.01776 20.5401 1.31814C20.0781 1.62079 19.7247 2.06224 19.5303 2.57828C18.9656 3.92309 18.2592 5.20223 17.4238 6.39431V3.32214C17.4238 2.92502 17.3865 2.26071 16.9612 1.70001C16.4521 1.02866 15.7158 0.895067 15.2047 0.895067H11.0449C10.509 0.882671 9.98777 1.0743 9.58721 1.43202C9.177 1.79836 8.92561 2.31008 8.88636 2.85867L8.88264 2.91064V2.96274C8.88264 3.52913 9.10707 3.94693 9.28638 4.20968C9.36665 4.32732 9.45252 4.4344 9.50676 4.50204L9.51928 4.51765C9.57712 4.58977 9.61572 4.6379 9.65446 4.69061C9.75637 4.82923 9.90295 5.04296 9.94442 5.59603V7.31448C9.22729 6.1356 8.47077 4.56683 7.90156 2.89134L7.89283 2.86563L7.88314 2.84026C7.74121 2.46854 7.51357 1.92767 7.05765 1.51378C6.52503 1.03025 5.89505 0.895067 5.32212 0.895067H2.66219C2.08258 0.895067 1.38383 1.03066 0.862448 1.58066C0.34974 2.12151 0.291672 2.76958 0.291672 3.11416V3.26948L0.324384 3.42131C1.06114 6.84095 2.57923 10.0433 4.75938 12.7779C5.74779 14.3367 7.08713 15.6432 8.67082 16.5928C10.2798 17.5575 12.0949 18.1262 13.9667 18.252L14.0156 18.2553H14.0645C14.9113 18.2553 15.7941 18.1822 16.4579 17.7398C17.3534 17.1431 17.4238 16.2265 17.4238 15.7698V14.4422C17.6536 14.628 17.9388 14.8781 18.2878 15.2142C18.7098 15.6366 19.0458 16.0025 19.334 16.322L19.4878 16.493L19.4887 16.494C19.7125 16.7431 19.9328 16.9884 20.1333 17.1901C20.3854 17.4435 20.6962 17.7228 21.0869 17.9291C21.51 18.1525 21.954 18.2535 22.4256 18.2535H25.0874C25.6481 18.2535 26.4524 18.1209 27.0179 17.4653C27.6342 16.7508 27.5871 15.8751 27.3933 15.2458L27.3585 15.1326L27.3058 15.0265ZM20.6334 15.1497C20.3337 14.8176 19.9724 14.4238 19.5158 13.9673L19.512 13.9635C17.9299 12.4382 17.1907 12.1724 16.6679 12.1724C16.3899 12.1724 16.0823 12.2036 15.8826 12.4523C15.7884 12.5697 15.7389 12.7112 15.7111 12.8588C15.6834 13.0062 15.6738 13.1792 15.6738 13.3763V15.7698C15.6738 16.0671 15.625 16.1919 15.4875 16.2835C15.3043 16.4056 14.9129 16.5045 14.0743 16.5053C12.4826 16.3968 10.9392 15.9124 9.57074 15.0919C8.19954 14.2698 7.04327 13.1336 6.19719 11.777L6.18798 11.7622L6.17708 11.7487C4.14561 9.22016 2.73004 6.254 2.04202 3.08461C2.04575 2.93183 2.07886 2.84119 2.13248 2.78461C2.18775 2.72631 2.32166 2.64507 2.66219 2.64507H5.32212C5.61802 2.64507 5.77116 2.70943 5.88137 2.80948C6.00632 2.92292 6.11469 3.11554 6.24635 3.45949C6.89923 5.3798 7.78212 7.17563 8.61817 8.4961C9.03605 9.1561 9.44731 9.70544 9.81785 10.0937C10.0028 10.2874 10.1842 10.4481 10.3573 10.5622C10.5249 10.6727 10.7148 10.7599 10.9102 10.7599C11.0133 10.7599 11.1338 10.7493 11.2499 10.6979C11.3748 10.6426 11.4717 10.5504 11.5402 10.4269C11.6613 10.2085 11.6944 9.88498 11.6944 9.46115V5.53682L11.6938 5.52762C11.6334 4.57288 11.3451 4.03584 11.0644 3.65405C11.0029 3.57037 10.9423 3.4948 10.8892 3.42866L10.8747 3.41053C10.8164 3.33786 10.77 3.27912 10.7319 3.22327C10.6621 3.12095 10.635 3.04961 10.6328 2.97316C10.6419 2.88241 10.6847 2.79821 10.7529 2.73729C10.8237 2.67405 10.9163 2.64113 11.0112 2.64507H15.2047C15.4451 2.64507 15.5261 2.70373 15.5669 2.75746C15.6244 2.83332 15.6738 2.99108 15.6738 3.32214V8.60552C15.6738 9.23311 15.9631 9.65795 16.3833 9.65795C16.8667 9.65795 17.2152 9.36461 17.8246 8.75521L17.8348 8.74503L17.8439 8.73391C19.2098 7.06815 20.3262 5.21248 21.1572 3.22501L21.1625 3.2101C21.2249 3.03449 21.3432 2.88413 21.4991 2.78199C21.655 2.67984 21.8401 2.63151 22.026 2.64437L22.0361 2.64507H24.7079C25.0723 2.64507 25.1922 2.7378 25.2309 2.79264C25.2722 2.851 25.3009 2.97605 25.2308 3.22129C24.2728 5.36377 23.0882 7.39743 21.6977 9.28809L21.6889 9.30148C21.5539 9.50791 21.4058 9.73632 21.3844 9.99862C21.3614 10.2803 21.4833 10.5363 21.6966 10.8107C21.8519 11.0405 22.1724 11.3542 22.4975 11.6725L22.5282 11.7025C22.8691 12.0361 23.2384 12.3976 23.5349 12.7475L23.5428 12.7568L23.5514 12.7654C24.4352 13.6469 25.17 14.6659 25.7274 15.7827C25.8163 16.0868 25.7618 16.2422 25.6927 16.3223C25.6118 16.4161 25.4306 16.5035 25.0874 16.5035H22.4256C22.2178 16.5035 22.0573 16.4625 21.9041 16.3816C21.7443 16.2972 21.58 16.163 21.374 15.9559C21.2081 15.7891 21.0268 15.5873 20.8057 15.3412C20.7508 15.2802 20.6935 15.2163 20.6334 15.1497Z"
                       />
-                    </svg></a></li><li.social-list__item"><a class="social-list__link" href="#" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Ссылка на youtube</span><svg.social-list__icon" width="26" height="19" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
+                    </svg></a></li><li.social-list__item"><a class="social-list__link" href="#" target="_blank" rel="nofollow noopener"><span class="visually-hidden">Ссылка на youtube</span><svg class="social-list__icon" width="26" height="19" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
