@@ -11,7 +11,8 @@ html(lang='ru-RU')
       header.header
         .container
           .header__wrapper
-            a.header__logo-link(href="index.html") #[span.visually-hidden Логотип сайта "По полочкам"]
+            a.header__logo-link(href="index.html")
+              span.visually-hidden Логотип сайта "По полочкам"
               .
                 <svg class="header__logo" width="230" height="35" viewBox="0 0 230 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -70,7 +71,8 @@ html(lang='ru-RU')
                       <circle cx="11" cy="11" r="7" stroke="#3971FF" stroke-width="2" />
                       <path d="M20 20L17 17" stroke="#3971FF" stroke-width="2" stroke-linecap="round" />
                     </svg>
-              a.user-header__basket(href="#") #[span.visually-hidden Корзина]
+              a.user-header__basket(href="#")
+                span.visually-hidden Корзина
                 .
                   <svg class="user-header__basket-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -96,15 +98,21 @@ html(lang='ru-RU')
                 li.nav__item #[a.nav__link(href="#") Оплата и доставка]
                 li.nav__item #[a.nav__link(href="#") Контакты]
               ul.user-nav
-                li.user-nav__item #[a.user-nav__link.user-nav__link--transparent(href="#") #[span.user-nav__text Регистрация]]
-                li.user-nav__item #[a.user-nav__link(href="#") #[span.user-nav__text Вход]]
+                li.user-nav__item
+                  a.user-nav__link.user-nav__link--transparent(href="#")
+                    span.user-nav__text Регистрация
+                li.user-nav__item
+                  a.user-nav__link(href="#")
+                    span.user-nav__text Вход
       .content
         main.catalog-page
           section.breadcrumbs
             .container
               ul.breadcrumbs__list
-                li.breadcrumbs__item #[a.breadcrumbs__link(href="index.html") Главная страница]
-                li.breadcrumbs__item #[span.breadcrumbs__text Каталог книг]
+                li.breadcrumbs__item
+                  a.breadcrumbs__link(href="index.html") Главная страница
+                li.breadcrumbs__item
+                  span.breadcrumbs__text Каталог книг
           section.catalog
             .container
               h1.catalog__title Каталог книг
@@ -195,9 +203,10 @@ html(lang='ru-RU')
                                   stroke="white"
                                 />
                               </svg>
-                              #[span.books__star 3.8]
+                            span.books__star 3.8
                           .books__wrapper
-                            a.books__link(href="iron-king.html") Подробнее #[span.books__pages 416 страниц]
+                            a.books__link(href="iron-king.html") Подробнее
+                            span.books__pages 416 страниц
                     li.books__item
                       .books__inner
                         img.books__img(src="static/images/content/book-fox-hole.jpg" alt='Фото книги - "Лисья нора"' width="221" height="221")
@@ -214,9 +223,10 @@ html(lang='ru-RU')
                                   stroke="white"
                                 />
                               </svg>
-                              #[span.books__star 4.2]
+                            span.books__star 4.2
                           .books__wrapper
-                            a.books__link(href="#") Подробнее #[span.books__pages 336 страниц]
+                            a.books__link(href="#") Подробнее
+                            span.books__pages 336 страниц
                     li.books__item
                       .books__inner
                         img.books__img(src="static/images/content/book-just-masa.jpg" alt='Фото книги - "Просто маса"' width="221" height="221")
@@ -233,7 +243,7 @@ html(lang='ru-RU')
                                   stroke="white"
                                 />
                               </svg>
-                              #[span.books__star 4.5]
+                            span.books__star 4.5
                           <div class="books__wrapper">
                             <a class="books__link" href="#">Подробнее</a><span class="books__pages">448 страниц</span>
                           </div>
@@ -255,9 +265,10 @@ html(lang='ru-RU')
                                   stroke="white"
                                 />
                               </svg>
-                              #[span.books__star 3.9]
+                            span.books__star 3.9
                           .books__wrapper
-                            a.books__link(href="#") Подробнее #[span.books__pages 320 страниц]
+                            a.books__link(href="#") Подробнее
+                            span.books__pages 320 страниц
                     li.books__item
                       .books__inner
                         img.books__img(src="static/images/content/book-sun-midnight.jpg" alt='Фото книги - "Солнце полуночи"' width="221" height="221")
@@ -274,9 +285,10 @@ html(lang='ru-RU')
                                   stroke="white"
                                 />
                               </svg>
-                              #[span.books__star 3.5]
+                            span.books__star 3.5
                           .books__wrapper
-                            a.books__link(href="#") Подробнее #[<span.books__pages 784 страниц]
+                            a.books__link(href="#") Подробнее
+                            span.books__pages 784 страниц
                     li.books__item
                       .books__inner
                         img.books__img(src="static/images/content/book-second-life.jpg" alt='Фото книги - "Вторая жизнь Уве"' width="221" height="221")
@@ -293,9 +305,10 @@ html(lang='ru-RU')
                                   stroke="white"
                                 />
                               </svg>
-                              #[span.books__star 4.4]
+                            span.books__star 4.4
                           books__wrapper
-                            a.books__link(href="#") Подробнее #[span.books__pages 384 страниц]
+                            a.books__link(href="#") Подробнее
+                            span.books__pages 384 страниц
                     li.books__item
                       .books__inner
                         img.books__img(src="static/images/content/book-istrebitel.jpg" alt='Фото книги - "Истребитель"' width="221" height="221")
@@ -312,9 +325,10 @@ html(lang='ru-RU')
                                   stroke="white"
                                 />
                               </svg>
-                              #[span.books__star 3.9]
+                            span.books__star 3.9
                           .books__wrapper
-                            a.books__link(href="#") Подробнее #[span.books__pages 576 страниц]
+                            a.books__link(href="#") Подробнее
+                            span.books__pages 576 страниц
                     li.books__item
                       .books__inner
                         img.books__img(src="static/images/content/book-lavr.jpg" alt='Фото книги - "Лавр"' width="221" height="221")
@@ -331,9 +345,10 @@ html(lang='ru-RU')
                                   stroke="white"
                                 />
                               </svg>
-                              #[span.books__star 4.1]
+                            span.books__star 4.1
                           .books__wrapper
-                            a.books__link(href="#") Подробнее #[span.books__pages 448 страниц]
+                            a.books__link(href="#") Подробнее
+                            span.books__pages 448 страниц
               .catalog__pagination.pagination
                 ul.pagination__list
                   li.pagination__item
@@ -345,7 +360,8 @@ html(lang='ru-RU')
                   li.pagination__item
                     apagination__link(href="#" title="Перейти на страницу № 4") 4
                   li.pagination__item
-                    a.pagination__link.pagination__link--arrow(href="#" title="Перейти на следующую страницу") #[span.visually-hidden Перейти на следующую страницу]
+                    a.pagination__link.pagination__link--arrow(href="#" title="Перейти на следующую страницу")
+                      span.visually-hidden Перейти на следующую страницу
                       .
                         <svg width="14" height="10" viewBox="0 0 14 10" xmlns="http://www.w3.org/2000/svg">
                           <path
@@ -356,7 +372,8 @@ html(lang='ru-RU')
         div.container
           div.footer__wrapper
             div.footer__col
-              a.footer__logo-link(href="index.html") #[span.visually-hidden Логотип сайта "По полочкам"]
+              a.footer__logo-link(href="index.html")
+                span.visually-hidden Логотип сайта "По полочкам"
                 .
                   <svg class="footer__logo" width="230" height="35" viewBox="0 0 230 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -404,7 +421,8 @@ html(lang='ru-RU')
                   </svg>
               ul.footer__social.social-list
                 li.social-list__item
-                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener") #[span.visually-hidden Ссылка на instagram]
+                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener")
+                    span.visually-hidden Ссылка на instagram
                     .
                       <svg class="social-list__icon" width="24" height="23" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -422,7 +440,8 @@ html(lang='ru-RU')
                         />
                       </svg>
                 li.social-list__item
-                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener") #[span.visually-hidden Ссылка на telegram]
+                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener")
+                    span.visually-hidden Ссылка на telegram
                     .
                       <svg class="social-list__icon" width="25" height="21" viewBox="0 0 25 21" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -432,7 +451,8 @@ html(lang='ru-RU')
                         />
                       </svg>
                 li.social-list__item
-                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener") #[span.visually-hidden Ссылка на vkontakte]
+                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener")
+                    span.visually-hidden Ссылка на vkontakte
                     .
                       <svg class="social-list__icon" width="28" height="19" viewBox="0 0 28 19" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -442,7 +462,8 @@ html(lang='ru-RU')
                         />
                       </svg>
                 <li.social-list__item">
-                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener") #[span.visually-hidden Ссылка на youtube]
+                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener")
+                    span.visually-hidden Ссылка на youtube
                     .
                       <svg class="social-list__icon" width="26" height="19" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
                         <path
