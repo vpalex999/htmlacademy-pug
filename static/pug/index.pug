@@ -11,7 +11,8 @@ html(lang='ru-RU')
       header.header
         .container
           .header__wrapper
-            a.header__logo-link(href="index.html") #[span.visually-hidden Логотип сайта "По полочкам"]
+            a.header__logo-link(href="index.html") 
+              span.visually-hidden Логотип сайта "По полочкам"
               .
                 <svg class="header__logo" width="230" height="35" viewBox="0 0 230 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -70,7 +71,8 @@ html(lang='ru-RU')
                       <circle cx="11" cy="11" r="7" stroke="#3971FF" stroke-width="2" />
                       <path d="M20 20L17 17" stroke="#3971FF" stroke-width="2" stroke-linecap="round" />
                     </svg>
-              a.user-header__basket(href="#") #[span.visually-hidden Корзина]
+              a.user-header__basket(href="#")
+                span.visually-hidden Корзина
                 .
                   <svg class="user-header__basket-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -91,13 +93,21 @@ html(lang='ru-RU')
           div.container
             div.nav__content
               ul.nav__list
-                li.nav__item #[a.nav__link(href="index.html") Главная]
-                li.nav__item #[a.nav__link(href="catalog.html") Каталог книг]
-                li.nav__item #[a.nav__link(href="#") Оплата и доставка]
-                li.nav__item #[a.nav__link(href="#") Контакты]
+                li.nav__item 
+                  a.nav__link(href="index.html") Главная
+                li.nav__item 
+                  a.nav__link(href="catalog.html") Каталог книг
+                li.nav__item
+                  a.nav__link(href="#") Оплата и доставка
+                li.nav__item
+                  a.nav__link(href="#") Контакты
               ul.user-nav
-                li.user-nav__item #[a.user-nav__link.user-nav__link--transparent(href="#") #[span.user-nav__text Регистрация]]
-                li.user-nav__item #[a.user-nav__link(href="#") #[span.user-nav__text Вход]]
+                li.user-nav__item
+                  a.user-nav__link.user-nav__link--transparent(href="#")
+                    span.user-nav__text Регистрация
+                li.user-nav__item 
+                  a.user-nav__link(href="#")
+                    span.user-nav__text Вход
       .content
         main.index-page
           h1.visually-hidden Магазин по продаже книг "По полочкам"
@@ -174,9 +184,10 @@ html(lang='ru-RU')
                               stroke="white"
                             />
                           </svg>
-                          #[span.books__star 3.5]
+                        span.books__star 3.5
                       .books__wrapper
-                        a.books__link(href="#") Подробнее #[span.books__pages 208 страниц]
+                        a.books__link(href="#") Подробнее
+                        span.books__pages 208 страниц
                 li.books__item
                   .books__inner
                     img.books__img(src="static/images/content/book-kingdoms.jpg" alt='Фото книги - "Королевство"' width="275" height="320")
@@ -193,9 +204,10 @@ html(lang='ru-RU')
                               stroke="white"
                             />
                           </svg>
-                          #[span.books__star 4.8]
+                        span.books__star 4.8
                       .books__wrapper
-                        a.books__link(href="#") Подробнее #[span.books__pages 576 страниц]
+                        a.books__link(href="#") Подробнее
+                        span.books__pages 576 страниц
                 li.books__item
                   .books__inner
                     img.books__img(src="static/images/content/book-transhumanism.jpg" alt='Фото книги - "Transhumanism inc."' width="275" height="320")
@@ -212,9 +224,10 @@ html(lang='ru-RU')
                               stroke="white"
                             />
                           </svg>
-                          #[span.books__star 3.9]
+                        span.books__star 3.9
                       .books__wrapper
-                        a.books__link(href="#") Подробнее #[span.books__pages 608 страниц]
+                        a.books__link(href="#") Подробнее
+                        span.books__pages 608 страниц
                 li.books__item
                   .books__inner
                     img.books__img(src="static/images/content/book-feelings-of-shame.jpg" alt='Фото книги - "Чувство стыда"' width="275" height="320")
@@ -232,9 +245,10 @@ html(lang='ru-RU')
                               stroke="white"
                             />
                           </svg>
-                          #[span.books__star 4.1]
+                        span.books__star 4.1
                       .books__wrapper
-                        a.books__link(href="#") Подробнее #[span.books__pages 170 страниц]
+                        a.books__link(href="#") Подробнее
+                        span.books__pages 170 страниц
           section.best-books
             .container
               h2.best-books__title.section__title Лучшее
@@ -261,9 +275,10 @@ html(lang='ru-RU')
                               stroke="white"
                             />
                           </svg>
-                          #[span.books__star 5.0]
+                        span.books__star 5.0
                       .books__wrapper
-                        a.books__link(href="#") Подробнее #[span.books__pages 416 страниц]
+                        a.books__link(href="#") Подробнее
+                        span.books__pages 416 страниц
                 li.books__item
                   .books__inner
                     img(
@@ -286,9 +301,10 @@ html(lang='ru-RU')
                               stroke="white"
                             />
                           </svg>
-                          #[span.books__star 4.9]
+                        span.books__star 4.9
                       .books__wrapper
-                        a.books__link(href="#") Подробнее #[span.books__pages 520 страниц]
+                        a.books__link(href="#") Подробнее
+                        span.books__pages 520 страниц
                 li.books__item
                   .books__inner
                     img(
@@ -311,9 +327,10 @@ html(lang='ru-RU')
                               stroke="white"
                             />
                           </svg>
-                          #[span.books__star 4.8]
+                        span.books__star 4.8
                       .books__wrapper
-                        a.books__link(href="#") Подробнее #[span.books__pages 608 страниц]
+                        a.books__link(href="#") Подробнее
+                        span.books__pages 608 страниц
                 li.books__item
                   .books__inner
                     img(
@@ -338,9 +355,10 @@ html(lang='ru-RU')
                               stroke="white"
                             />
                           </svg>
-                          #[span.books__star 4.7]
+                        span.books__star 4.7
                       .books__wrapper
-                        a.books__link(href="#") Подробнее #[span.books__pages 288 страниц]
+                        a.books__link(href="#") Подробнее
+                        span.books__pages 288 страниц
           section.reviews
             .container
               h2.reviews__title.section__title Отзывы
@@ -424,7 +442,8 @@ html(lang='ru-RU')
         div.container
           div.footer__wrapper
             div.footer__col
-              a.footer__logo-link(href="index.html") #[span.visually-hidden Логотип сайта "По полочкам"]
+              a.footer__logo-link(href="index.html")
+                span.visually-hidden Логотип сайта "По полочкам"
                 .
                   <svg class="footer__logo" width="230" height="35" viewBox="0 0 230 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -472,7 +491,8 @@ html(lang='ru-RU')
                   </svg>
               ul.footer__social.social-list
                 li.social-list__item
-                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener") #[span.visually-hidden Ссылка на instagram]
+                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener")
+                    span.visually-hidden Ссылка на instagram
                     .
                       <svg class="social-list__icon" width="24" height="23" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -490,7 +510,8 @@ html(lang='ru-RU')
                         />
                       </svg>
                 li.social-list__item
-                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener") #[span.visually-hidden Ссылка на telegram]
+                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener")
+                    span.visually-hidden Ссылка на telegram
                     .
                       <svg class="social-list__icon" width="25" height="21" viewBox="0 0 25 21" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -500,7 +521,8 @@ html(lang='ru-RU')
                         />
                       </svg>
                 li.social-list__item
-                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener") #[span.visually-hidden Ссылка на vkontakte]
+                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener")
+                    span.visually-hidden Ссылка на vkontakte
                     .
                       <svg class="social-list__icon" width="28" height="19" viewBox="0 0 28 19" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -510,7 +532,8 @@ html(lang='ru-RU')
                         />
                       </svg>
                 <li.social-list__item">
-                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener") #[span.visually-hidden Ссылка на youtube]
+                  a.social-list__link(href="#" target="_blank" rel="nofollow noopener")
+                    span.visually-hidden Ссылка на youtube
                     .
                       <svg class="social-list__icon" width="26" height="19" viewBox="0 0 26 19" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -529,24 +552,36 @@ html(lang='ru-RU')
                 li.footer-nav__item
                   h4.footer-nav__title Меню
                   ul.footer-nav__sub-list
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="index.html") Главная]
-                    li.footer-nav__sub-item #[a.footer-nav__link Каталог книг]
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Оплата и доставка]
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Контакты]
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="index.html") Главная
+                    li.footer-nav__sub-item
+                      a.footer-nav__link Каталог книг
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Оплата и доставка
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Контакты
                 li.footer-nav__item
                   h4.footer-nav__title Интересно
                   ul.footer-nav__sub-list
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Новости]
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Акции]
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Блог]
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Скидки]
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Новости
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Акции
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Блог
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Скидки
                 li.footer-nav__item
                   h4.footer-nav__title Важно
                   ul.footer-nav__sub-list
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Возврат]
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Сертификаты]
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Предзаказы]
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="#") Конкурсы]
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Возврат
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Сертификаты
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Предзаказы
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="#") Конкурсы
                 li.footer-nav__item
                   h4.footer-nav__title.footer-nav__title--more Адрес
                   ul.footer-nav__sub-list
@@ -555,5 +590,6 @@ html(lang='ru-RU')
                         .
                           г. Санкт-Петербург,#[br]
                           наб. Pеки Карповки, 5 корпус П
-                    li.footer-nav__sub-item #[a.footer-nav__link(href="tel:+78005558628") +7 800 555 86 28]
+                    li.footer-nav__sub-item
+                      a.footer-nav__link(href="tel:+78005558628") +7 800 555 86 28
         p.footer__copyright © ООО «Интерактивные обучающие технологии», 2013−2021
