@@ -3,9 +3,7 @@
     font-style: normal;
     font-display: swap;
     font-family: "PTSansAstra";
-    src: url("../fonts/astra/regular/PT-Astra-Sans_Regular.woff") format("woff"),
-    url("../fonts/astra/regular/PT-Astra-Sans_Regular.woff2") format("woff2"),
-    url("../fonts/astra/regular/PT-Astra-Sans_Regular.ttf") format("truetype");
+    src: url("../fonts/astra/regular/PT-Astra-Sans_Regular.woff") format("woff"), url("../fonts/astra/regular/PT-Astra-Sans_Regular.woff2") format("woff2"), url("../fonts/astra/regular/PT-Astra-Sans_Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -13,9 +11,7 @@
     font-style: normal;
     font-display: swap;
     font-family: "PTSansAstra";
-    src: url("../fonts/astra/bold/PT-Astra-Sans_Bold.woff") format("woff"),
-    url("../fonts/astra/bold/PT-Astra-Sans_Bold.woff2") format("woff2"),
-    url("../fonts/astra/bold/PT-Astra-Sans_Bold.ttf") format("truetype");
+    src: url("../fonts/astra/bold/PT-Astra-Sans_Bold.woff") format("woff"), url("../fonts/astra/bold/PT-Astra-Sans_Bold.woff2") format("woff2"), url("../fonts/astra/bold/PT-Astra-Sans_Bold.ttf") format("truetype");
 }
 
 @font-face {
@@ -23,9 +19,7 @@
     font-style: normal;
     font-display: swap;
     font-family: "Golos";
-    src: url("../fonts/golos/regular/GolosText-Regular.woff") format("woff"),
-    url("../fonts/golos/regular/GolosText-Regular.woff2") format("woff2"),
-    url("../fonts/golos/regular/GolosText-Regular.ttf") format("truetype");
+    src: url("../fonts/golos/regular/GolosText-Regular.woff") format("woff"), url("../fonts/golos/regular/GolosText-Regular.woff2") format("woff2"), url("../fonts/golos/regular/GolosText-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -33,9 +27,7 @@
     font-style: normal;
     font-display: swap;
     font-family: "Golos";
-    src: url("../fonts/golos/medium/GolosText-Medium.woff") format("woff"),
-    url("../fonts/golos/medium/GolosText-Medium.woff2") format("woff2"),
-    url("../fonts/golos/medium/GolosText-Medium.ttf") format("truetype");
+    src: url("../fonts/golos/medium/GolosText-Medium.woff") format("woff"), url("../fonts/golos/medium/GolosText-Medium.woff2") format("woff2"), url("../fonts/golos/medium/GolosText-Medium.ttf") format("truetype");
 }
 
 @font-face {
@@ -43,9 +35,7 @@
     font-style: normal;
     font-display: swap;
     font-family: "Podkova";
-    src: url("../fonts/podkova/semibold/Podkova-SemiBold.woff") format("woff"),
-    url("../fonts/podkova/semibold/Podkova-SemiBold.woff2") format("woff2"),
-    url("../fonts/podkova/semibold/Podkova-SemiBold.ttf") format("truetype");
+    src: url("../fonts/podkova/semibold/Podkova-SemiBold.woff") format("woff"), url("../fonts/podkova/semibold/Podkova-SemiBold.woff2") format("woff2"), url("../fonts/podkova/semibold/Podkova-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
@@ -53,9 +43,7 @@
     font-style: normal;
     font-display: swap;
     font-family: "Podkova";
-    src: url("../fonts/podkova/bold/Podkova-Bold.woff") format("woff"),
-    url("../fonts/podkova/bold/Podkova-Bold.woff2") format("woff2"),
-    url("../fonts/podkova/bold/Podkova-Bold.ttf") format("truetype");
+    src: url("../fonts/podkova/bold/Podkova-Bold.woff") format("woff"), url("../fonts/podkova/bold/Podkova-Bold.woff2") format("woff2"), url("../fonts/podkova/bold/Podkova-Bold.ttf") format("truetype");
 }
 
 html {
@@ -73,7 +61,6 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-    width: 1440px;
 }
 
 *,
@@ -95,10 +82,6 @@ ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-}
-
-body {
-    margin: 0 auto;
 }
 
 ol,
@@ -132,7 +115,7 @@ section {
     height: 100%;
 }
 
-main {
+.content {
     flex: 1 0 auto;
 }
 
@@ -409,15 +392,13 @@ main {
     transition: all ease-out 0.15s;
 }
 
-.user-nav__link:hover,
-.user-nav__link:focus {
+.user-nav__link:hover, .user-nav__link:focus {
     border-color: #f6f6f6;
     background-color: #f6f6f6;
     outline: none;
 }
 
-.user-nav__link:hover .user-nav__icon,
-.user-nav__link:focus .user-nav__icon {
+.user-nav__link:hover .user-nav__icon, .user-nav__link:focus .user-nav__icon {
     stroke: #3971ff;
 }
 
@@ -426,8 +407,7 @@ main {
     color: #ffffff;
 }
 
-.user-nav__link--transparent:hover,
-.user-nav__link--transparent:focus {
+.user-nav__link--transparent:hover, .user-nav__link--transparent:focus {
     color: #3971ff;
 }
 
@@ -437,8 +417,7 @@ main {
     color: #ffffff;
 }
 
-.user-nav__link--red:hover,
-.user-nav__link--red:focus {
+.user-nav__link--red:hover, .user-nav__link--red:focus {
     border-color: #ff9292;
     background-color: #ff9292;
     color: #ffffff;
@@ -468,7 +447,7 @@ main {
     min-height: 450px;
     padding: 22px 35px 32px;
     border-radius: 6px;
-    background-color: #ff7d02;
+    background-color: #fd8d5a;
 }
 
 .slider__item::before {
@@ -479,7 +458,7 @@ main {
     z-index: 10;
     width: 301px;
     height: 540px;
-    background-color: #fe872e;
+    background-color: #ff9364;
     transform: rotate(-48.44deg);
 }
 
@@ -519,8 +498,8 @@ main {
 
 .slider__img {
     position: absolute;
-    top: 50px;
-    right: -4px;
+    top: 59px;
+    right: 50px;
     z-index: 20;
     transform: rotate(-27.28deg);
 }
@@ -1049,8 +1028,7 @@ main {
 }
 
 .catalog-filter__checkbox:focus-visible + label::before {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) inset,
-    0 0 8px rgba(126, 239, 104, 0.6);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) inset, 0 0 8px rgba(126, 239, 104, 0.6);
 }
 
 .catalog-filter__checkbox:checked + label::before {
@@ -1110,8 +1088,7 @@ main {
 }
 
 .catalog-filter__radio:focus-visible + label::before {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) inset,
-    0 0 8px rgba(126, 239, 104, 0.6);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) inset, 0 0 8px rgba(126, 239, 104, 0.6);
 }
 
 .catalog-filter__radio:checked + label::before {
@@ -1180,8 +1157,7 @@ main {
 .catalog-books__select {
     padding: 0 15px 0 7px;
     border: none;
-    background: transparent url("../images/common/arrow.svg") no-repeat right
-    center;
+    background: transparent url("../images/common/arrow.svg") no-repeat right center;
     color: #3971ff;
     outline: none;
     line-height: 21px;
