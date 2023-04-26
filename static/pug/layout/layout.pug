@@ -8,6 +8,9 @@ html(lang='ru-RU')
     title Главная страница
   body
     .wrapper
-      include ../modules/header
-      block content
-      include ../modules/footer
+      block header
+        include ../includes/header
+      .content
+        block content
+      block footer
+        include ../includes/footer
