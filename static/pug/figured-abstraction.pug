@@ -1,5 +1,12 @@
 extends layout/layout
 
+block variables 
+  - var title = "Книга Фигурная абстракция"
+  - var pageClass = "catalog-page"
+  - var pathContentImg = 'static/images/content/'
+  - var pathCommonImg = 'static/images/common/'
+
+
 block content
   main.book-page
     include ./includes/book-page/breadcrumbs

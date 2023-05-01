@@ -1,7 +1,13 @@
 extends layout/layout
 
+block variables
+  - var title = "Главная страница"
+  -var pageClass = "index-page"
+  - var pathContentImg = 'static/images/content/'
+  - var pathCommonImg = 'static/images/common/'
+
 block content
-  main.index-page
+  main(class= pageClass)
     h1.visually-hidden Магазин по продаже книг "По полочкам"
     include ./includes/main-page/hero
     include ./includes/main-page/new-books

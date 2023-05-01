@@ -1,6 +1,12 @@
 extends layout/layout
 
+block variables
+  - var title = "Каталог книг"
+  -var pageClass = "catalog-page"
+  - var pathContentImg = 'static/images/content/'
+  - var pathCommonImg = 'static/images/common/'
+
 block content
-  main.catalog-page
+  main(class= pageClass)
     include ./includes/catalog-page/breadcrumbs
     include ./includes/catalog-page/catalog/catalog-catalog
